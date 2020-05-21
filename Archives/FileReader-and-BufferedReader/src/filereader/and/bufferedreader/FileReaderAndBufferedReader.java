@@ -33,10 +33,10 @@ public class FileReaderAndBufferedReader {
         finally {
             try {
 
-                if (br == null) {
+                if (br != null) {
                     br.close();
                 }
-                if (fr == null) {
+                if (fr != null) {
                     fr.close();
                 }
             }
