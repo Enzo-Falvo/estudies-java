@@ -33,7 +33,7 @@ public class Interfaces {
         System.out.print("Enter price per day: ");
         double pricePerDay = sc.nextDouble();
         
-        RentalServices rentalService = new RentalServices(pricePerDay, pricePerHour, new BrazilTaxService());
+        RentalServices rentalService = new RentalServices(pricePerDay, pricePerHour,  new BrazilTaxService());
         
         rentalService.processInvoice(cr);
         
