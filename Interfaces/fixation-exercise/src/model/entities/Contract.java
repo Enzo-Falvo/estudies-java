@@ -1,18 +1,25 @@
 package model.entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Contract {
+
     private Integer number;
     private Date date;
-    
+    private Double totalValue;
+
+    private List<Installment> installments = new ArrayList<>();
+
     public Contract() {
-        
+
     }
 
-    public Contract(Integer number, Date date) {
+    public Contract(Integer number, Date date, Double totalValue) {
         this.number = number;
         this.date = date;
+        this.totalValue = totalValue;
     }
 
     public Integer getNumber() {
@@ -30,12 +37,29 @@ public class Contract {
     public void setDate(Date date) {
         this.date = date;
     }
-    
-    
-     
-    public Double totalValue() {
-        return null;
+
+    public List<Installment> getInstallments() {
+        return installments;
+    }
+
+    public void addInstallment(Installment installment) {
+        installments.add(installment);
+    }
+
+    public void removeInstallment(Installment installment) {
+        installments.remove(installment);
+    }
+
+    public Double getTotalValue() {
+        return totalValue;
+    }
+
+    public void setTotalValue(Double totalValue) {
+        this.totalValue = totalValue;
     }
     
+    
+
+   
 
 }
