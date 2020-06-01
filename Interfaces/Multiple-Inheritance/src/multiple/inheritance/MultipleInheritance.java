@@ -22,7 +22,7 @@ public class MultipleInheritance {
         c.print("My dissertation");
         System.out.println("Scan result: " + c.scan());
         
-        
+        //IGNORE THE LAST COMMIT
         
         
     }
