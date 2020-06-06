@@ -8,7 +8,7 @@ public class Contract {
     }
     
     public void processContract (Contract contract, int months) {
-        double basicQuota = contract888888f
+        double basicQuota = contract
     }
     
     
