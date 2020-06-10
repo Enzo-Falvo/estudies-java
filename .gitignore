@@ -48,3 +48,5 @@ hs_err_pid*
 /Generics, Set, Map/DelimitedGenerics/build/
 /Generics, Set, Map/Wildcard-Types/nbproject/private/
 /Generics, Set, Map/Wildcard-Types/build/
+/Generics, Set, Map/Bounded-Wildcards/nbproject/private/
+/Generics, Set, Map/Bounded-Wildcards/build/
