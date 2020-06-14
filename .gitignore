@@ -62,3 +62,5 @@ hs_err_pid*
 /Generics, Set, Map/SetProgram/build/
 /Generics, Set, Map/EqualityWithSet/nbproject/private/
 /Generics, Set, Map/EqualityWithSet/build/
+/Generics, Set, Map/ComparingElementsWithTreeSet/nbproject/private/
+/Generics, Set, Map/ComparingElementsWithTreeSet/build/
