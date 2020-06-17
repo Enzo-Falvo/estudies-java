@@ -9,45 +9,39 @@ public class SetFixationExercise {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner (System.in);
-        Set <Client> set = new HashSet<>();
+        Scanner sc = new Scanner(System.in);
 
-        
+        Set<Integer> a = new HashSet<>();
+        Set<Integer> b = new HashSet<>();
+        Set<Integer> c = new HashSet<>();
+
         System.out.print("How many students for course A? ");
-        int nA = sc.nextInt();
-        for (int i = 1; i <= nA; i++) {
-
-            int code = sc.nextInt();
-            set.add(new Client(code));
-            
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int number = sc.nextInt();
+            a.add(number);
         }
-        
+
         System.out.print("How many students for course B? ");
-        int nB = sc.nextInt();
-        for (int i = 1; i <= nB; i++) {
-
-            int code = sc.nextInt();
-            set.add(new Client(code));
-            
+        n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int number = sc.nextInt();
+            b.add(number);
         }
-        
+
         System.out.print("How many students for course C? ");
-        int nC = sc.nextInt();
-        for (int i = 1; i <= nC; i++) {
-
-            int code = sc.nextInt();
-            set.add(new Client(code));
-            
+        n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int number = sc.nextInt();
+            c.add(number);
         }
-        
-        System.out.println("Total users: " + set.size());
-        
-        
 
+        Set<Integer> total = new HashSet<>(a);
+        total.addAll(b);
+        total.addAll(c);
 
-        
-        
-        
+        System.out.println("Total students: " + total.size());
+
         sc.close();
     }
 
