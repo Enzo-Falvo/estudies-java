@@ -107,3 +107,5 @@ hs_err_pid*
 /JDBC/Insert-Data/nbproject/private/
 /JDBC/Insert-Data/build/
 /JDBC/Update-Date/nbproject/private/
+/JDBC/Delete-Date/nbproject/private/
+/JDBC/Delete-Date/build/
